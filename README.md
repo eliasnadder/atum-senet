@@ -16,13 +16,13 @@ The notebook installs its Python dependencies in the first cell:
 
 The notebook also relies on the Senet game engine modules (for example: `ai_pruning`, `game_state_pyrsistent`, `board`, `rules_silent`, `sticks`) which are expected to be available on the path.
 
-> **Note:** The current notebook assumes a Kaggle-style path: `/kaggle/input/senet-files`.
+> **Note:** The current notebook assumes a Kaggle-style path: `/kaggle/input/senet-files`. Adjust this for your OS and environment (for example, a Windows path or a local dataset directory).
 
 ## Running the notebook
 
 1. Open `senet.ipynb` in Jupyter or Kaggle.
 2. Make sure the Senet engine modules are available and update the `sys.path.append(...)` line if your path differs.
-3. Configure Weights & Biases logging by setting `WANDB_API_KEY` or running `wandb login` (avoid hardcoding keys in the notebook).
+3. Configure Weights & Biases logging by setting `WANDB_API_KEY` in your environment (or using your platform’s secret manager), or run `wandb login`. Avoid hardcoding keys in the notebook.
 4. Run all cells to start training.
 
 ## Outputs
